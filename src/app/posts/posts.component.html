@@ -1,0 +1,7 @@
+<ng-container *ngFor="let post of posts; let i = index">
+  <app-post-card
+    [post]="post"
+    (postClicked)="navigateToDetail($event)"
+  ></app-post-card>
+  <hr *ngIf="i !== posts.length - 1" />
+</ng-container>

@@ -1,0 +1,23 @@
+.card {
+  height: 100px;
+  overflow: hidden;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 200ms;
+  .header {
+    font-size: 0.8em;
+  }
+  h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .content-overview {
+    overflow: hidden;
+    color: var(--text-color-secondary);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}

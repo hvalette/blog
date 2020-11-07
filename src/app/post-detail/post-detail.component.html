@@ -1,0 +1,10 @@
+<div class="post-detail">
+  <h1 class="flex justify-center">{{ post.title }}</h1>
+  <div class="infos flex justify-center">
+    <span
+      >Publié le {{ post.publishDate.toDate() | date: "dd/MM/yyyy" }} par
+      {{ post.author }}</span
+    >
+  </div>
+  <div class="content">{{ post.content }}</div>
+</div>

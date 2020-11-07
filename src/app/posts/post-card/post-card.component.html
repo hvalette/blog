@@ -1,0 +1,11 @@
+<div
+  class="card flex direction-column justify-space-between"
+  (click)="cardClicked()"
+>
+  <div class="header flex justify-space-between">
+    <div>{{ post.publishDate.toDate() | date: "dd/MM/yyyy" }}</div>
+    <div>{{ post.author }}</div>
+  </div>
+  <h1>{{ post.title }}</h1>
+  <div class="content-overview">{{ post.content }}</div>
+</div>
