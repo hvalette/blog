@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pierrevalette-blog": {
+      "hosting": {
+        "blog": [
+          "pierrevalette-blog"
+        ]
+      }
+    }
+  }
+}
