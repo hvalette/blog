@@ -1,0 +1,22 @@
+header {
+  height: 50px;
+  padding: 1rem;
+  border-bottom: 1px solid var(--text-color-secondary);
+  .logo {
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  .theme-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 200ms;
+    &:hover {
+      background-color: var(--hover-color);
+    }
+    svg {
+      fill: var(--text-color);
+    }
+  }
+}
