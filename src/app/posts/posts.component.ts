@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostModel } from '../services/post.model';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-posts',
@@ -10,10 +11,18 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class PostsComponent implements OnInit {
   posts: PostModel[];
 
-  constructor(private route: ActivatedRoute, private router: Router) {}
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    public authService: AuthService
+  ) {}
 
   ngOnInit(): void {
     this.posts = this.route.snapshot.data.posts;
+  }
+
+  navigateToNewPostCreation(): void {
+    this.router.navigate(['new-post']);
   }
 
   navigateToDetail(id: string): void {

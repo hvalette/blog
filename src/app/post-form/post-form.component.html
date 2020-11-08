@@ -1,0 +1,15 @@
+<form [formGroup]="postForm" class="post-form">
+  <input
+    formControlName="title"
+    placeholder="Titre"
+    type="text"
+    class="title flex justify-center"
+  />
+  <textarea
+    formControlName="content"
+    placeholder="Contenu..."
+    type="text"
+    class="content"
+  ></textarea>
+  <button (click)="publish()" [disabled]="postForm.invalid">Publier</button>
+</form>

@@ -11,9 +11,20 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { PostCardComponent } from './posts/post-card/post-card.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { PostFormComponent } from './post-form/post-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, TheAppBarComponent, PostsComponent, PostCardComponent, PostDetailComponent],
+  declarations: [
+    AppComponent,
+    TheAppBarComponent,
+    PostsComponent,
+    PostCardComponent,
+    PostDetailComponent,
+    PostFormComponent,
+    LoginComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +33,7 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
     }),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

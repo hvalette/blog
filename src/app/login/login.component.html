@@ -1,0 +1,21 @@
+<section class="login-container">
+  <h1>Connexion</h1>
+  <form
+    [formGroup]="loginForm"
+    class="flex direction-column justify-space-between"
+  >
+    <label>
+      <span>Email</span>
+      <input placeholder="Email" formControlName="email" type="email" />
+    </label>
+    <label>
+      <span>Mot de passe</span>
+      <input
+        placeholder="Mot de passe"
+        formControlName="password"
+        type="password"
+      />
+    </label>
+    <button (click)="login()">Se connecter</button>
+  </form>
+</section>

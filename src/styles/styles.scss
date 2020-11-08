@@ -40,3 +40,50 @@ body {
 .direction-column {
   flex-direction: column;
 }
+
+// INPUTS
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  background-color: var(--background-color-accent);
+  color: var(--text-color);
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--text-color-secondary);
+  }
+}
+
+.fab {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  box-shadow: 0 1px 2px #00000033;
+  cursor: pointer;
+  svg {
+    fill: var(--background-color);
+  }
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
